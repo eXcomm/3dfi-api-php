@@ -2,6 +2,8 @@
 
 The nViso Developer Platform is a set of APIs that make your application more engaging through capturing real-time emotional feedback and enabling next generation real-time interactivity. For a full list of capabilities please consult the [nViso Developer Platform Portal](https://developer.nviso.net) for more information.
 
+This repository contains the open source PHP SDK that allows you to access [nViso Developer Platform](https://developer.nviso.net) from your PHP application. In order to use this SDK you will need to have an registered and authorized account from the [nViso Developer Platform Portal](https://developer.nviso.net) and a valid application ID and Key. Except as otherwise noted, the nViso 3D Facial Imaging PHP SDK is licensed under the MIT Licence (http://opensource.org/licenses/MIT).
+
 ## Installation & Dependencies
 
 Using the nViso 3D Facial Imaging PHP SDK is as simple as dropping the unzipped contents of the downloaded library into your project. The client libary makes use of the Mashape library and it depends on libcurl to make HTTP requests. Many installations of PHP have cURL installed by default. The following code snippet will determine if libcurl is installed on your server:
@@ -76,7 +78,7 @@ var_dump($response);
 ?>
 ```
 
-### Response
+### Response Format
 
 Data returned from the API is output either as a JSON object, Javascript, or XML (depending on the format you choose). 
 
