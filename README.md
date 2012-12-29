@@ -4,6 +4,20 @@ The [nViso Developer Platform](https://developer.nviso.net) is a set of APIs tha
 
 This repository contains the open source PHP SDK that allows you to access [nViso Developer Platform](https://developer.nviso.net) from your PHP app. Except as otherwise noted, the nViso 3D Facial Imaging PHP SDK is licensed under the MIT Licence (http://opensource.org/licenses/MIT).
 
+## Core Features
+
+* Detects faces depicted inside image.
+* Extracts 18 facial features points on the face including components of eyes, eyebrows, nose, and mouth.
+* Recognizes up to 7 emotional states from faces detected.
+* Supports processing by providing URL to image or by uploading image
+* Supports any standard image format such as JPEG, PNG, BMP, etc.
+* Supports multiple data response formats including JSON, JSONP, or EmotionML.
+* Supports real-time interactive applications with fast, low latency processing (response time typically less than 1 sec).
+* Supports low bandwidth networks, works on low resolution images.
+* Supports natural environments and common human apperances such as beards, glasses, and minor face occlusions.
+* Supports mobile imaging conditions, including strong backlight and motion blur in images.
+* Supports poor lighting conditions.
+
 ## Installation & Dependencies
 
 Using the nViso 3D Facial Imaging PHP SDK is as simple as dropping the unzipped contents of the downloaded library into your project. The client libary makes use of the Mashape library and it depends on libcurl to make HTTP requests. Many installations of PHP have cURL installed by default. The following code snippet will determine if libcurl is installed on your server:
@@ -78,10 +92,18 @@ var_dump($response);
 ?>
 ```
 
-### Support & Feedback
+## Response Formats
+
+Data from the API is output either as a JSON object, Javascript, or XML (depending on the format you choose). 
+
+- `json`: the output will be valid JSON with the mimetype of `application/json`. 
+- `jsonp`: the output will be valid HTML with the mimetype of `application/javascript`.
+- `eml`: the output will be valid EmotionML with the mimetype of `text/xml`.
+
+## Support & Feedback
 
 Please shoot us an email if you have questions or feedback (info@nviso.ch) or open a GitHub issue for bugs and feature requests.
 
-### Third Party Licenses
+## Credits
 
 This repository incorporates the [Mashape Library](https://github.com/Mashape/mashape-php-client-library) which is distributed under the GPL license.
