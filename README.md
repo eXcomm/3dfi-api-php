@@ -1,10 +1,12 @@
-# nviso-3dfi-api-php
+# nViso 3D Facial Imaging PHP SDK (v1.0.0)
 
-A module for using the nViso 3D Facial Imaging (3DFI) API with PHP.
+The [nViso Developer Platform](https://developer.nviso.net) is a set of APIs that make your application more engaging through capturing real-time emotional feedback and enabling next generation real-time interactivity.
+
+This repository contains the open source PHP SDK that allows you to access [nViso Developer Platform](https://developer.nviso.net) from your PHP app. Except as otherwise noted, the nViso 3D Facial Imaging PHP SDK is licensed under the MIT Licence (http://opensource.org/licenses/MIT).
 
 ## Installation & Dependencies
 
-Using the nViso 3D Facial Imaging PHP client library is as simple as dropping the unzipped contents of the downloaded library into your project. The client libary makes use of the Mashape library and it depends on libcurl to make HTTP requests. Many installations of PHP have cURL installed by default. The following code snippet will determine if libcurl is installed on your server:
+Using the nViso 3D Facial Imaging PHP SDK is as simple as dropping the unzipped contents of the downloaded library into your project. The client libary makes use of the Mashape library and it depends on libcurl to make HTTP requests. Many installations of PHP have cURL installed by default. The following code snippet will determine if libcurl is installed on your server:
 
 ```php
 <?php
@@ -15,11 +17,11 @@ If no exception is thrown, libcurl is properly configured. If an exception is th
 
 ## Getting Started
 
-Getting started with the nViso 3DFI API couldn't be easier. Create a `nViso3DFIHttpClient` and you're ready to go. You will find a [sample file](https://github.com/nViso/3dfi-api-php/blob/master/example/example_simple.php) that allows you to get started immediately in the [example folder](https://github.com/nViso/3dfi-api-php/blob/master/example/).
+Getting started with the nViso 3D Facial Imaging PHP SDK couldn't be easier. Create a `nViso3DFIHttpClient` and you're ready to go. You will find a [sample file](https://github.com/nViso/3dfi-api-php/blob/master/example/example_simple.php) that allows you to get started immediately in the [example folder](https://github.com/nViso/3dfi-api-php/blob/master/example/).
 
 ### API Credentials
 
-The `nViso3DFIHttpClient` needs your nViso 3DFI credentials. You can pass these directly to the constructor. Your keys should be kept secret and never shared with anyone!
+The `nViso3DFIHttpClient` needs your application ID and key found by logging into the [nViso Developer Platform](https://developer.nviso.net). You can pass these directly to the constructor. Your keys should be kept secret and never shared with anyone!
 
 ```php
 <?php
@@ -76,6 +78,10 @@ var_dump($response);
 ?>
 ```
 
-### Copyright
+### Support & Feedback
 
-Copyright (C) 2012 - 2013 nViso SA.
+Please shoot us an email if you have questions or feedback (info@nviso.ch) or open a GitHub issue for bugs and feature requests.
+
+### Third Party Licenses
+
+This repository incorporates the [Mashape Library](https://github.com/Mashape/mashape-php-client-library) which is distributed under the GPL license.
