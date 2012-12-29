@@ -80,10 +80,23 @@ var_dump($response);
 
 ### Response Format
 
-Data returned from the API is output either as a JSON object, Javascript, or XML (depending on the format you choose). 
+The client library returns a `MashapeResponse` object that includes the response of the endpoint. It has the following properties:
+
+- int code: the HTTP status code.
+- array headers: the response headers.
+- string rawBody: the non-parsed raw body.
+- (stdClass) body: the parsed body.
+
+The parsed body containing the data returned by the endpoint can be accessed simply by :
+
+```php
+<?php
+print $response->body[0];
+?>
+```
+The format of the data in the parsed body can be either as a JSON object or XML (depending on the format you choose). 
 
 - `json`: the output will be valid JSON with the mimetype of `application/json`. 
-- `jsonp`: the output will be valid HTML with the mimetype of `application/javascript`.
 - `eml`: the output will be valid EmotionML with the mimetype of `text/xml`.
 
 For further documentation on the response data model please consult the [nViso Developer Platform Portal](https://developer.nviso.net) for more information.
