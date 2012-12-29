@@ -1,8 +1,6 @@
-# nViso 3D Facial Imaging PHP SDK (v1.0.0)
+# nViso 3D Facial Imaging PHP SDK (v1)
 
-The nViso Developer Platform is a set of APIs that make your application more engaging through capturing real-time emotional feedback and enabling next generation real-time interactivity. For a full list of capabilities you should consult the [nViso Developer Platform Portal](https://developer.nviso.net) for more information.
-
-This repository contains the open source PHP SDK that allows you to access [nViso Developer Platform](https://developer.nviso.net) from your PHP app. Except as otherwise noted, the nViso 3D Facial Imaging PHP SDK is licensed under the MIT Licence (http://opensource.org/licenses/MIT).
+The nViso Developer Platform is a set of APIs that make your application more engaging through capturing real-time emotional feedback and enabling next generation real-time interactivity. For a full list of capabilities please consult the [nViso Developer Platform Portal](https://developer.nviso.net) for more information.
 
 ## Installation & Dependencies
 
@@ -78,13 +76,15 @@ var_dump($response);
 ?>
 ```
 
-## Response Formats
+### Response
 
-Data from the API is output either as a JSON object, Javascript, or XML (depending on the format you choose). 
+Data returned from the API is output either as a JSON object, Javascript, or XML (depending on the format you choose). 
 
 - `json`: the output will be valid JSON with the mimetype of `application/json`. 
 - `jsonp`: the output will be valid HTML with the mimetype of `application/javascript`.
 - `eml`: the output will be valid EmotionML with the mimetype of `text/xml`.
+
+For further documentation on the response data model please consult the [nViso Developer Platform Portal](https://developer.nviso.net) for more information.
 
 ## Support & Feedback
 
