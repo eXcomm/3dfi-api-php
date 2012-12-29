@@ -1,22 +1,8 @@
 # nViso 3D Facial Imaging PHP SDK (v1.0.0)
 
-The [nViso Developer Platform](https://developer.nviso.net) is a set of APIs that make your application more engaging through capturing real-time emotional feedback and enabling next generation real-time interactivity.
+The nViso Developer Platform is a set of APIs that make your application more engaging through capturing real-time emotional feedback and enabling next generation real-time interactivity. For a full list of capabilities you should consult the [nViso Developer Platform Portal](https://developer.nviso.net) for more information.
 
 This repository contains the open source PHP SDK that allows you to access [nViso Developer Platform](https://developer.nviso.net) from your PHP app. Except as otherwise noted, the nViso 3D Facial Imaging PHP SDK is licensed under the MIT Licence (http://opensource.org/licenses/MIT).
-
-## Core Features
-
-* Detects faces depicted inside image.
-* Extracts 18 facial features points on the face including components of eyes, eyebrows, nose, and mouth.
-* Recognizes up to 7 emotional states from faces detected.
-* Supports processing by providing URL to image or by uploading image
-* Supports any standard image format such as JPEG, PNG, BMP, etc.
-* Supports multiple data response formats including JSON, JSONP, or EmotionML.
-* Supports real-time interactive applications with fast, low latency processing (response time typically less than 1 sec).
-* Supports low bandwidth networks, works on low resolution images.
-* Supports natural environments and common human apperances such as beards, glasses, and minor face occlusions.
-* Supports mobile imaging conditions, including strong backlight and motion blur in images.
-* Supports poor lighting conditions.
 
 ## Installation & Dependencies
 
